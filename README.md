@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 # Ringover-Assignment
-Building the assignment project of Ringover
 =======
 # Getting Started with Create React App
 
