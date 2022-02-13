@@ -22,7 +22,7 @@ export default function Navbar() {
         </IconContext.Provider>
       </div>
       <div className='imageContainer'>
-        <img src="https://source.unsplash.com/random/200x200" width='35' height='35' className='image'/>
+        <img src="https://source.unsplash.com/random/200x200" alt='logo' width='35' height='35' className='image'/>
         <IconContext.Provider value={{size: '1.3em'}}>
           <BsArrowLeftRight/>
           <BsBoxArrowInRight/>
