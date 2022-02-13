@@ -1,0 +1,77 @@
+@import "variables";
+
+.leftbar{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topDetails{
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $bodyHeadingColor;
+
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .iconsContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 50px;
+        align-items: center;
+    }
+
+    .faded{
+        color: $fadedTextColor;
+    }
+
+    .company{
+        display: flex;
+
+        .name{
+            padding-right: 20px;
+            border-right: 1px solid;
+        }
+
+        .icon{
+            padding-left: 20px;
+            width: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .link{
+        text-decoration: none;
+        color: $bodyIconColor;
+    }
+
+    .mediaLinksContainer{
+        margin: 25px 0;
+        padding: 10px 0;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: $fadedTextColor;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .mediaLinks{
+            width: 60px;
+            display: flex;
+            justify-content: space-between;
+            color: $bodyIconColor;
+        }
+    }
+}
+
+
+
+
