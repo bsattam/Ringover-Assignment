@@ -11,7 +11,7 @@ export default function Description() {
     <div className='workspaceDescription'>
         <div className='tabsContainer'>
             <IconContext.Provider value={{size: '1.1rem'}}>
-                <div className='tab'>
+                <div className='tab active'>
                     <div className='tabName'>Schedule</div>
                     <div className='tabClose'> <AiOutlineClose/></div>
                 </div>

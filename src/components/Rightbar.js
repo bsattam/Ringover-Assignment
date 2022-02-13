@@ -1,10 +1,15 @@
 import React from 'react'
-import styles from '../styles/Rightbar.scss'
+import Topbuttons from './rightbar/Topbuttons';
+import Tabs from './rightbar/Tabs';
+import Activities from './rightbar/Activities'
+import '../styles/Rightbar.scss'
 
 export default function Rightbar() {
   return (
     <div className='rightbar'>
-        Rightbar
+        <Topbuttons/>
+        <Tabs/>
+        <Activities/>
     </div>
   )
 }

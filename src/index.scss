@@ -1,9 +1,22 @@
+@import './styles/variables.scss';
+
 body {
   margin: 0;
   padding: 0;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: $navbarColor;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $spanColor;
+    border-radius: 10px;
+  }
 
   font-family: 'Sora', sans-serif;
 }

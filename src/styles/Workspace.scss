@@ -59,7 +59,11 @@
             .tabClose{
                 cursor: pointer;
             }
-        }        
+        }  
+        
+        .active{
+            background-color: $tabMainColor !important;
+        }
     }
 }
 
@@ -140,5 +144,6 @@
         border-radius: 10px;
         color: white;
         margin-left: auto;
+        cursor: pointer;
     }
 }
