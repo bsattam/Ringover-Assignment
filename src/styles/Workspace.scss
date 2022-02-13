@@ -4,6 +4,7 @@
 .workspace{
     flex: 3;
     display: flex;
+    max-width: 900px;
     flex-direction: column;
     padding: 0 25px;
     color: $bodyHeadingColor;
@@ -35,5 +36,109 @@
         color: $bodyIconColor;
         border: 1px solid $fadedTextColor;
         border-radius: 10px;
+    }
+}
+
+.workspaceDescription{
+    .tabsContainer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .tab{
+            display: flex;
+            align-items: center;
+            width: 23%;
+            justify-content: space-between;
+            padding: 5px 10px;
+            margin: 0 1%;
+            background-color: $tabFadedColor;
+            border-radius: 5px;
+            color: $fadedTextColor;
+
+            .tabClose{
+                cursor: pointer;
+            }
+        }        
+    }
+}
+
+.workspaceMail{
+    margin: 10px;
+
+    .mailSubject{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0px 0 30px;
+    }
+
+    .senderInfo{
+        display: flex;
+        justify-content: space-between;
+
+        .nameIcon{
+            display: flex;
+
+            .senderName{
+                margin-right: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            .icon{
+                cursor: pointer;
+            }
+        }
+
+        .mailDetails{
+            font-size: 12px;
+
+            .icons{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 90px;
+
+                div{
+                    margin: 5px 5px 0;
+                    cursor: pointer;
+                }
+
+                .redIcon{
+                    color: $spanColor;
+                }
+            }
+        }
+    }
+
+    .mailBody{
+        margin-top: 20px;
+        overflow-wrap: break-word; 
+        font-size: 16px;
+    }
+
+    .pdfContainer{
+        width: 100px;
+        margin: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div{
+            background-color: $fadedTextColor;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    .button{
+        background-color: $bodyIconColor;
+        padding: 10px;
+        text-align: center;
+        width: 60px;
+        border-radius: 10px;
+        color: white;
+        margin-left: auto;
     }
 }
