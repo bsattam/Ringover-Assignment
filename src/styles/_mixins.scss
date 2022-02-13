@@ -1,0 +1,19 @@
+@mixin listDescription{
+    .item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0 10px 5px;
+
+        div{
+            margin-left: 10px;
+            font-size: calc(9px + 0.4vw);
+        }
+
+        span{
+            color: $spanColor;
+            font-size: 12px;
+            padding: 0 5px;
+        }
+    }
+}

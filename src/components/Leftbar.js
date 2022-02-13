@@ -2,16 +2,18 @@ import React from 'react'
 import '../styles/Leftbar.scss'
 import TopDetails from './leftbar/TopDetails'
 import Topics from './leftbar/Topics'
-import Contact from './leftbar/Contact'
+import Contacts from './leftbar/Contacts'
 import Additional from './leftbar/Additional'
+import Buttons from './leftbar/Buttons'
 
 export default function Leftbar() {
   return (
     <div className='leftbar'>
         <TopDetails/>
         <Topics/>
-        <Contact/>
+        <Contacts/>
         <Additional/>
+        <Buttons/>
     </div>
   )
 }

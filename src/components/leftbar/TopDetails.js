@@ -36,8 +36,8 @@ export default function TopDetails() {
         <div className='mediaLinksContainer'>
             <IconContext.Provider value={{size: '1.2rem'}}>
                 <div className='mediaLinks'>
-                    <BsLinkedin/>
-                    <BsFillCloudFill/>
+                    <div><BsLinkedin/></div>
+                    <div><BsFillCloudFill/></div>
                 </div>
             </IconContext.Provider>
         </div>
