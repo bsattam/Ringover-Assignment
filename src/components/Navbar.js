@@ -16,7 +16,7 @@ export default function Navbar() {
         <div>Sales Machine</div>
       </div>
       <div className='inputContainer'>
-        <input type='text' value='Search' className='inputField'/>
+        <input type='text' placeholder='Search' className='inputField'/>
         <IconContext.Provider value={{size: '1.5em', className: 'searchIcon'}}>
           <AiOutlineSearch/>
         </IconContext.Provider>
