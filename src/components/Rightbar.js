@@ -6,7 +6,7 @@ import '../styles/Rightbar.scss'
 
 export default function Rightbar() {
   return (
-    <div className='rightbar'>
+    <div className='rightbar1'>
         <Topbuttons/>
         <Tabs/>
         <Activities/>
