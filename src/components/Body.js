@@ -11,6 +11,7 @@ import { hide } from '../redux/toggleSidebarSlice'
 
 export default function Body() {
   const [width, setWidth] = useState(window.innerWidth);
+  const [tab, setTab] = useState('activities');
 
   window.addEventListener('resize', () => setWidth(window.innerWidth))
 
@@ -24,9 +25,9 @@ export default function Body() {
       <div className='body' onClick={handleHide}>
           <Leftbar/>
           <Workspace/>
-          { width>1000 && <Rightbar/> }
+          { width>1000 && <Rightbar tab={tab} setTab={setTab}/> }
       </div>
-      <ToggleRightbar/>
+      <ToggleRightbar tab={tab} setTab={setTab}/>
     </>
   )
 }

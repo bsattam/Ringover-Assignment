@@ -17,6 +17,7 @@
     align-items: center;
     margin: 10px 4vw;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .ringIcon{
@@ -45,6 +46,7 @@
     height: 20px;
     padding: 5px 10px;
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
 
 .imageContainer{
@@ -54,6 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 .image{

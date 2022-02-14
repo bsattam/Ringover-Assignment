@@ -118,58 +118,7 @@ export default function Activities() {
             </div>
             <div className='bottomSection'></div>
         </div>
-        <div className='activity'>
-            <div className='topSection'>
-                <IconContext.Provider value={{size: '1.3rem'}}>
-                    <div className='icon color1'><RiMailUnreadFill/></div>
-                </IconContext.Provider>
-                <div className='text'>
-                    <div className='name'>Aymeric Vanbock</div>
-                    <div className='subject'>Subject: Schedule a new meeting tomorrow at San Fransisco.</div>
-                </div>
-                <div className='date'>05/19</div>
-            </div>
-            <div className='bottomSection'></div>
-        </div>
-        <div className='activity'>
-            <div className='topSection'>
-                <IconContext.Provider value={{size: '1.3rem'}}>
-                    <div className='icon color1'><RiMailUnreadFill/></div>
-                </IconContext.Provider>
-                <div className='text'>
-                    <div className='name'>Aymeric Vanbock</div>
-                    <div className='subject'>Subject: Schedule a new meeting tomorrow at San Fransisco.</div>
-                </div>
-                <div className='date'>05/19</div>
-            </div>
-            <div className='bottomSection'></div>
-        </div>
-        <div className='activity'>
-            <div className='topSection'>
-                <IconContext.Provider value={{size: '1.3rem'}}>
-                    <div className='icon color1'><RiMailUnreadFill/></div>
-                </IconContext.Provider>
-                <div className='text'>
-                    <div className='name'>Aymeric Vanbock</div>
-                    <div className='subject'>Subject: Schedule a new meeting tomorrow at San Fransisco.</div>
-                </div>
-                <div className='date'>05/19</div>
-            </div>
-            <div className='bottomSection'></div>
-        </div>
-        <div className='activity'>
-            <div className='topSection'>
-                <IconContext.Provider value={{size: '1.3rem'}}>
-                    <div className='icon color1'><RiMailUnreadFill/></div>
-                </IconContext.Provider>
-                <div className='text'>
-                    <div className='name'>Aymeric Vanbock</div>
-                    <div className='subject'>Subject: Schedule a new meeting tomorrow at San Fransisco.</div>
-                </div>
-                <div className='date'>05/19</div>
-            </div>
-            <div className='bottomSection'></div>
-        </div>
+        
     </div>
   )
 }
