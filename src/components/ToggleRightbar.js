@@ -4,8 +4,7 @@ import Tabs from './rightbar/Tabs';
 import Activities from './rightbar/Activities'
 import '../styles/Rightbar.scss'
 
-import { useSelector, useDispatch } from 'react-redux'
-import { toggle } from '../redux/toggleSidebarSlice'
+import { useSelector } from 'react-redux'
 
 export default function Rightbar() {
     const [style, setStyle] = useState('rightbar2 hide');
@@ -13,7 +12,7 @@ export default function Rightbar() {
     const value = useSelector((state) => state.toggler.value);
 
     useEffect(()=>{
-        if (value == 0)
+        if (value === 0)
             setStyle('rightbar2 hide');
         else
             setStyle('rightbar2 show');

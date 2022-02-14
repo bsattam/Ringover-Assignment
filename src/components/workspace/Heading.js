@@ -5,7 +5,7 @@ import { RiUserVoiceFill } from "react-icons/ri";
 import { IoMdDocument } from "react-icons/io";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { toggle } from '../../redux/toggleSidebarSlice'
 
 export default function Heading() {

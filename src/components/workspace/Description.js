@@ -44,7 +44,7 @@ export default function Description() {
                     <IconContext.Provider value={{size: '1.1rem'}}>
                         { value.map((el) => {
                             let activeStyle;
-                            activeStyle = (el.id == active) ? 'dark' : 'light';
+                            activeStyle = (el.id === active) ? 'dark' : 'light';
                                 
                             return (
                             <div className={`tab ${activeStyle}`} key={el.id} onClick={()=>handleTabClick(el)}>
@@ -60,15 +60,15 @@ export default function Description() {
             }
             { value.length > 0 &&
                 <div className='main'>
-                    { mainContent=='mail' && <Mail/>}
-                    { mainContent=='call' && <Call/>}
-                    { mainContent=='videoCall' && <Videocall/>}
-                    { mainContent=='chat' && <Chat/>}
-                    { mainContent=='calendar' && <Calendar/>}
+                    { mainContent==='mail' && <Mail/>}
+                    { mainContent==='call' && <Call/>}
+                    { mainContent==='videoCall' && <Videocall/>}
+                    { mainContent==='chat' && <Chat/>}
+                    { mainContent==='calendar' && <Calendar/>}
                 </div>
             }
 
-            {value.length==0 && <Blank/>}
+            {value.length===0 && <Blank/>}
                 
             </div>
         </>

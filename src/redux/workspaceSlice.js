@@ -14,7 +14,7 @@ export const workspaceSlice = createSlice({
     removeTab: (state, action) => {
         let deleteIdx = 0;
         state.value.forEach((el, idx) => {
-            if (el.id == action.payload)
+            if (el.id === action.payload)
                 deleteIdx = idx;
         })
         state.value.splice(deleteIdx, 1);

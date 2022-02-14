@@ -6,8 +6,8 @@ import { BsCalendar2EventFill } from "react-icons/bs";
 import { BsFillChatLeftFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 
-import { useSelector, useDispatch } from 'react-redux'
-import { addTab, removeTab } from '../../redux/workspaceSlice'
+import { useDispatch } from 'react-redux'
+import { addTab } from '../../redux/workspaceSlice'
 
 export default function Buttons() {
 
