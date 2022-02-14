@@ -46,6 +46,9 @@
         align-items: center;
         margin-bottom: 20px;
 
+        .dark{ background-color: $tabMainColor }
+        .light{ background-color: $tabFadedColor }
+
         .tab{
             display: flex;
             align-items: center;
@@ -53,7 +56,7 @@
             justify-content: space-between;
             padding: 5px 10px;
             margin: 0 1%;
-            background-color: $tabFadedColor;
+            // background-color: $tabFadedColor;
             border-radius: 5px;
             color: $fadedTextColor;
             cursor: pointer;

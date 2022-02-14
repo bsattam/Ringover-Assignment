@@ -15,9 +15,11 @@ import { removeTab } from '../../redux/workspaceSlice'
 export default function Description() {
     const value = useSelector((state) => state.workspaceTabHandler.value)
     const [mainContent, setMainContent] = useState();
+    const [active, setActive] = useState();
     useEffect(() => {
         if (value.length > 0){
             setMainContent(value.at(-1).type);
+            setActive(value.at(-1).id);
         }
     }, [value])
     
@@ -27,19 +29,31 @@ export default function Description() {
         dispatch(removeTab(id));
     }
 
+    const handleTabClick = (el) => {
+        const id = el.id;
+        const type = el.type;
+        setMainContent(type);
+        setActive(id);
+    }
+
     return (
         <>
             <div className='workspaceDescription'>
             { value.length > 0 &&
                 <div className='tabsContainer'>
                     <IconContext.Provider value={{size: '1.1rem'}}>
-                        { value.map((el) => 
-                            <div className={`tab`} key={el.id} onClick={()=>setMainContent(el.type)}>
+                        { value.map((el) => {
+                            let activeStyle;
+                            activeStyle = (el.id == active) ? 'dark' : 'light';
+                                
+                            return (
+                            <div className={`tab ${activeStyle}`} key={el.id} onClick={()=>handleTabClick(el)}>
                                 <div className='tabName'>{el.type}</div>
                                 <div className='tabClose' onClick={() => closeHandler(el.id)}>
                                     <AiOutlineClose/>
                                 </div>
                             </div>
+                            )}
                         )}
                     </IconContext.Provider>
                 </div>
