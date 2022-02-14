@@ -1,7 +1,10 @@
 import React from 'react'
+import '../../styles/Workspace.scss';
 
 export default function Calendar() {
   return (
-    <div>This is my calendar component</div>
+    <div  className='dummy'>
+        This is my calendar tab.
+    </div>
   )
 }

@@ -3,9 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const workspaceSlice = createSlice({
   name: 'workspaceTabHandler',
   initialState: {
-    value: [
-        { id: '1', type: 'default'}
-    ],
+    value: [],
   },
   reducers: {
     addTab: (state, action) => {

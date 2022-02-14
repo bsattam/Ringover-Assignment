@@ -16,8 +16,9 @@ export default function Description() {
     const value = useSelector((state) => state.workspaceTabHandler.value)
     const [mainContent, setMainContent] = useState();
     useEffect(() => {
-        if (value.length > 0)
+        if (value.length > 0){
             setMainContent(value.at(-1).type);
+        }
     }, [value])
     
     const dispatch = useDispatch();
@@ -29,12 +30,11 @@ export default function Description() {
     return (
         <>
             <div className='workspaceDescription'>
-                
-            {value.length > 0 && 
+            { value.length > 0 &&
                 <div className='tabsContainer'>
                     <IconContext.Provider value={{size: '1.1rem'}}>
                         { value.map((el) => 
-                            <div className='tab' key={el.id} onClick={()=>setMainContent(el.type)}>
+                            <div className={`tab`} key={el.id} onClick={()=>setMainContent(el.type)}>
                                 <div className='tabName'>{el.type}</div>
                                 <div className='tabClose' onClick={() => closeHandler(el.id)}>
                                     <AiOutlineClose/>
@@ -44,8 +44,7 @@ export default function Description() {
                     </IconContext.Provider>
                 </div>
             }
-                
-            {value.length > 0 && 
+            { value.length > 0 &&
                 <div className='main'>
                     { mainContent=='mail' && <Mail/>}
                     { mainContent=='call' && <Call/>}
@@ -55,7 +54,7 @@ export default function Description() {
                 </div>
             }
 
-            {value.length == 0 && <Blank/>}
+            {value.length==0 && <Blank/>}
                 
             </div>
         </>
